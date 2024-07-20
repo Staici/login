@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		body{
+			font-family: arial;
+			background-image: linear-gradient(to right,rgb(132, 175, 245),rgb(1, 2, 3));
+		}
+
+              .botao{
+              	
+              	top: 20px;
+              	position: relative;
+				padding: 10px;
+				left: 99px;
+				background-color: dodgerblue;
+				border-radius: 5px;
+				color: white;
+              }
+
+			.box{
+				color: white;
+             position: absolute;
+             top:50%;
+             left: 50%;
+             transform: translate(-50%,-50%);
+             background-color:rgba(0, 0, 0, 0.8) ;
+             padding: 20px;
+             border-radius: 15px;
+             width: 20%;
+			}
+
+			fieldset{
+				
+            border: 3px solid dodgerblue;
+			}
+		
+			legend{
+				border: 1px solid dodgerblue;
+				padding: 10px;
+				text-align: center;
+				background-color: dodgerblue;
+				border-radius: 5px;
+				color: white;
+			}
+
+			.inputBox{
+				position: relative;
+			}
+		    
+		    .nam{
+		    	background:none ;
+		    	border: none;
+		    	border-bottom:1px solid white ;
+		    	outline: none;
+		    	color: white;
+		    	font-size: 15px;
+		    	width: 100%;
+		    	letter-spacing: 2px;
+
+		    }
+
+		    .labelInput{
+		    	position:absolute ;
+		    	top: 0px;
+		    	left: 0px;
+		    	pointer-events: none;
+		    	transition: 0.5s;
+		    }
+		    .nam:User-valid~.labelInput,
+		    .nam:focus~.labelInput 
+		    {
+		    	top:-20px;
+		    	font-size: 12px;
+		    	color: dodgerblue;
+		    }
+	</style>
+</head>
+<body>
+			<div class="box">
+			<main>
+		<form action="">
+			<fieldset>
+				<legend class="leg">Formulário</legend>
+
+           <div class="inputBox">
+			
+			<input type="text" class="nam">
+			<label class="labelInput">Nome Completo:</label>
+			 </div>
+		<br>
+             <div class="inputBox">
+			
+			<input type="text" class="nam" >
+			<label  class="labelInput" >Email:</label>
+             </div>
+             <br>
+             <div class="inputBox">
+			
+			<input  type="text" class="nam" >
+			<label  class="labelInput" >Telefone</label>
+           </div>
+ <br>
+           <div class="inputBox"  >
+           	
+           	<input type="text" class="nam" >
+           	<label class="labelInput">Senha</label>
+           </div>
+<button class="botao" type="submit">Cadastrar</button>
+</fieldset>
+		</form>
+	</main>
+
+ </div>
+</body>
+</html>
